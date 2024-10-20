@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title >TimeTable</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      max-width: 1000px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .lunch {
+      text-align: center;
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+    .clickable {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1 style= "text-align: center">TimeTable</h1>
+  <table>
+    <thead>
+    <tr>
+      <th>Hours</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td> 8:00 to 9:00 AM</td>
+      <td>Soft Skills</td>
+      <td>Full Stack</td>
+      <td>DSA</td>
+      <td>DAA</td>
+      <td>Soft Skills</td>
+    </tr>
+    <tr>
+      <td>9:00 AM to 10:00 AM</td>
+      <td class="clickable">Competitive Programming</td>
+      <td class="clickable">DAA</td>
+      <td class="clickable">Full Stack</td>
+      <td class="clickable">Automata</td>
+      <td class="clickable">DAA Lab</td>
+    </tr>
+    <tr>
+      <td>10:00 AM to 11:00 AM</td>
+      <td class="clickable">Agile</td>
+      <td class="clickable">Soft Skills</td>
+      <td class="clickable">Automata</td>
+      <td class="clickable">Automata</td>
+      <td class="clickable">Machine Learning</td>
+    </tr>
+    <tr>
+      <td>11:00 AM to 12:00 PM</td>
+      <td class="clickable">Machine Learning</td>
+      <td class="clickable">Agile</td>
+      <td class="clickable">GDPI</td>
+      <td class="clickable">Soft Skills</td>
+      <td class="clickable">Automata</td>
+
+    </tr>
+    <tr>
+      <td colspan="6" class="lunch">Lunch</td>
+    </tr>
+    <tr>
+      <td>1:00 PM to 2:00 PM</td>
+      <td class="clickable">Agile</td>
+      <td class="clickable">Automata Tut</td>
+      <td class="clickable">Machine Learning</td>
+      <td class="clickable">DAA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2:00 PM to 3:00 PM</td>
+      <td></td>
+      <td class="clickable">Full Stack</td>
+      <td class="clickable">Agile</td>
+      <td class="clickable">Machine Learning Lab</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3:00 PM to 4:00 PM</td>
+      <td class="clickable">Automata</td>
+      <td></td>
+      <td class="clickable">Machine Learning</td>
+      <td class="clickable">Machine Learning Lab</td>
+      <td></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
